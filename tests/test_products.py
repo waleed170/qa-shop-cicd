@@ -5,7 +5,7 @@ def test_products_page(page: Page):
     page.goto("http://127.0.0.1:8000/products.html")
 
     expect(
-        page.get_by_role("heading", name="Products")
+        page.get_by_role("heading", name="Shopping")
     ).to_be_visible()
 
     expect(
